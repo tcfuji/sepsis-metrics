@@ -2,7 +2,6 @@ from pandas import Timedelta
 from datetime import datetime
 from tqdm import tqdm
 from pymongo import MongoClient
-from collections import OrderedDict
 
 import pandas as pd
 import numpy as np
@@ -38,7 +37,6 @@ sep_codes = ['A41.9',
  '995.93']
 
 def write_metrics(start_date, end_date, time_interval):
-    import time
 
     # initialize lists for the csv file.
     tp_dh_list = []
@@ -151,7 +149,7 @@ def write_metrics(start_date, end_date, time_interval):
                     enc_alert_docs.append(doc)
                 elif vn in not_alerted_vns:
                     # The patient had sepsis but was not alerted this week.
-                    # OK since we omit patients who were discharged AND
+                    # OK since we omit patients whom were discharged AND
                     # had sepsis before beginning_time.
                     print("fn")
                     fn_time_dict.insert(time_ind, doc)
@@ -323,7 +321,7 @@ if __name__ == '__main__':
     # Make sure you're connected to the database
     with open('mongo_creds.yaml') as f:
         creds = yaml.safe_load(f)
-    client = MongoClient('UPHSVLNDC058.uphs.upenn.edu', port=27017)
+    client = MongoClient('input hostname here', port=12345)
     is_authed = client.admin.authenticate(creds['user'],creds['pass'])
 
     assert is_authed

@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 from ps_datasci import psUtilities
 from ps_datasci.scripts import psClean
+from collections import OrderedDict
 
 """
 Corey's functions
