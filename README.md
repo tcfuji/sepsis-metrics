@@ -8,4 +8,4 @@ In a nutshell, the task of counting sepsis patients turned out to require such c
 
 By implementing the necessary methodological changes mentioned in the Patient Selection primer and making the program more fault-tolerant, I created a project that accurately measured the performance of one of Penn Medicine's life-saving, automated, early-warning systems.
 
-Special thanks goes to [Osama Ahmed](https://www.linkedin.com/in/osamamahmed/) for helping with the patient selection, [Michael Becker](https://github.com/mdbecker) for his mentorship, and [Corey Chivers](https://github.com/cjbayesian) for implementing some of the functionality.
+Special thanks goes to [Osama Ahmed](https://www.linkedin.com/in/osamamahmed/) for helping with the patient selection primer, [Michael Becker](https://github.com/mdbecker) for his mentorship, and [Corey Chivers](https://github.com/cjbayesian) for implementing some of the functionality.
